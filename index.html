@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson-20 paper+JS</title>
-    <link rel="stylesheet" href="css/paper.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neomo+SVG+JS</title>
+  <link rel="stylesheet" href="css/neomo.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <div class="header__logo">
-          <a class="logo-icon" href="">
-            Logo
-          </a>
-        </div>
-        <div class="container header__wrapper">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#">Link</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Link1</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Link2</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Link3</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="burger">
-        <div class="burger__line burger__line-1"></div>
-        <div class="burger__line burger__line-2"></div>
-        <div class="burger__line burger__line-3"></div>
-        <div class="burger__line burger__line-4"></div>
-      </div>
+  <div class="container">
+    <div class="tab">
+      <ul class="tab-list">
+        <li><a id="tab-1" class="current">Оберіть квартиру</a></li>
+        <li><a id="tab-2">Оберіть хатинку</a></li>
+        <li><a id="tab-3">tab3</a></li>
+      </ul>
+      <ul class="tab-content outset-neomo">
+        <li id="content-1" class="tab-content--list">
+          <div class="tab-content--title">Преміальне житло в центрі міста</div>
+          <div class="tab-content--text">
+            
+            <div class="build-info inset-neomo">
+              <h1>Build інформація</h1>
+              <div class="row">
+                <div class="build-info__floor outset-neomo">
+                  <h5>Floor</h5>
+                  <div id="floor">1</div>
+                </div>
+                <div class="build-info__flats outset-neomo">
+                  <h5>Квартири</h5>
+                  <div id="flats">1</div>
+                </div>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1200 1200" fill="none">
+              <g id="build_components" >
+              <rect id="project-build-img 2" width="1200" height="1200" fill="url(#pattern0)"/>
+              <path id="floor5+" data-floor="Горище"data-flats="99" class="floor"d="M188 260.5L190 315.5L245 260.5L1020 296.5L1022.5 235.5L794 219.5L800.5 215.5L769.5 213.5L757.5 217L612.5 207L620 202.5L500 193.5L491.5 199L244 181L188 260.5Z" stroke="black"/>
+              <path id="floor5" data-floor="5" data-flats="4" class="floor" d="M245 261L190 315.5L194 419.5L250.5 413.5L1015 419L1019.5 296.5L245 261Z" stroke="black"/>
+              <path id="floor4" data-floor="4" data-flats="3" class="floor" d="M195 420L199 523L256 562.5L1011 537L1016 419L251.5 413.5L195 420Z" stroke="black"/>
+              <path id="floor3" data-floor="3" data-flats="4" class="floor" d="M202 624.5L198 523L255 562.5L1010 537L1005.5 652.5L260 707L202 624.5Z" stroke="black"/>
+              <path id="floor2" data-floor="2" data-flats="2" class="floor" d="M206 725.5L202 624L260 707L1005.5 652.5L1000.5 766L265 848.5L206 725.5Z" stroke="black"/>
+              <path id="floor1" data-floor="1" data-flats="10" class="floor" d="M209 820.5L206 726L265 848.5L1001 765.5L996.5 876L269 985L209 820.5Z" stroke="black"/>
+              <path id="floor0" data-floor="-" data-flats="-" class="floor" d="M211.5 870.5L209 821L269 985L996.5 876.5L995 932.5L271.5 1055.5L211.5 870.5Z" stroke="black"/>
+              </g>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_5_4" transform="scale(0.000833333)"/>
+              </pattern>
+              <image id="image0_5_4" data-name="project-build-img.jpg" width="1200" height="1200" xlink:href="img/project-build-img.jpg"/>
+              </defs>
+              </svg>
+          
+              
+          </div>
+        </li>
+        <li id="content-2" class="tab-content--list">
+          <div class="tab-content--title">Оберіть будівлю</div>
+          <div class="tab-content--text">
+            BACKROUD чомусь не працює
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1182 904" fill="none">
+              <g id="apartments">
+              <rect id="project-buildings-img 1" width="1182" height="904" fill="url(#pattern0)"/>
+              <path id="apart2" data-apart="6" data-flat="32" class="apart" d="M676.695 711.564L539.583 631.188V593.364L522.444 583.908V572.088L539.583 562.041V337.461L676.695 255.903L815.58 337.461V562.041L830.946 572.088V586.863L815.58 596.319V631.188L680.832 711.564V707.427L687.333 703.881L693.243 695.016L690.879 686.151L683.787 680.832H676.695L666.057 686.151V697.38L676.695 707.427V711.564Z" stroke="black"/>
+              <path id="apart1" data-apart="5" data-flat="23" class="apart" d="M500.577 612.276L325.641 509.442V131.793L502.35 30.141L678.468 131.793V255.903L538.992 337.461V562.041L522.444 572.679V585.09L535.446 592.773L500.577 612.276Z" stroke="black"/>
+              </g>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_1_6" transform="scale(0.000846024 0.00110619)"/>
+              </pattern>
+              <image id="image0_1_6" data-name="project-buildings-img.jpg" width="1182" height="904" xlink:href="img/project-buildings-img.jpg"/>
+              </defs>
+              </svg>
 
-
-    <div class="row flex-spaces child-borders">
-        <label class="paper-btn margin" for="modal-1">Don't Open Modal!</label>
-      </div>
-      <input class="modal-state" id="modal-1" type="checkbox">
-      <div class="modal">
-        <label class="modal-bg" for="modal-1"></label>
-        <div class="modal-body">
-          <label class="btn-close" for="modal-1">X</label>
-          <h4 class="modal-title">Скрытая кнопка</h4>
-          <h5 class="modal-subtitle">Ты нашел ее!</h5>
-          <p class="modal-text">Не знаю зачем нам она! :D</p>
-          <label for="modal-1">Nice!</label>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="progress margin-bottom">
-          <div class="bar w-75"></div>
-        </div>
+              <div class="build-info inset-neomo">
+                <h1>Build інформація</h1>
+                <div class="row">
+                  <div class="build-info__aparts outset-neomo">
+                    <h5>Поверхи</h5>
+                    <div id="aparts">1</div>
+                  </div>
+                  <div class="build-info__flats outset-neomo">
+                    <h5>Квартири</h5>
+                    <div id="flat">1</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </li>
+        <li id="content-3" class="tab-content--list">
+          <div class="tab-content--title">title3</div>
+          <div class="tab-content--text">
+            You can insert any type of content with this tab class.
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <div class="card" style="width: 20rem;">
-        <img src="https://picsum.photos/768" alt="Card example image">
-      
-        <div class="card-body ">
-          <h4 class="card-title">У меня есть опыт работы с этим фреймворком!</h4>
-          <h5 class="card-subtitle">Просто не комерческий.</h5>
-          <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
-          <button class="card-btn">Let me go here!</button>
-        </div>
-      </div>
-    
-    <div class="overlay">
-        <div class="custom-modal container paper">
-        <h2 class="custom-modal__title">CustomTitle!</h2>
-        <p>Header zaiviy </p>
-        <button class="custom-modal__btn">Close</button>
-      </div>
-    </div>
-    
+  
 
-      <script src="js/scriptJS.js"></script>
+
+  <script src="js/neomo.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
