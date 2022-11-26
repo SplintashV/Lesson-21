@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-20 paper+JS</title>
+    <link rel="stylesheet" href="css/paper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <a class="logo-icon" href="">
+            Logo
+          </a>
+        </div>
+        <div class="container header__wrapper">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Link</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Link1</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Link2</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Link3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="burger">
+        <div class="burger__line burger__line-1"></div>
+        <div class="burger__line burger__line-2"></div>
+        <div class="burger__line burger__line-3"></div>
+        <div class="burger__line burger__line-4"></div>
+      </div>
+
+
+    <div class="row flex-spaces child-borders">
+        <label class="paper-btn margin" for="modal-1">Don't Open Modal!</label>
+      </div>
+      <input class="modal-state" id="modal-1" type="checkbox">
+      <div class="modal">
+        <label class="modal-bg" for="modal-1"></label>
+        <div class="modal-body">
+          <label class="btn-close" for="modal-1">X</label>
+          <h4 class="modal-title">Скрытая кнопка</h4>
+          <h5 class="modal-subtitle">Ты нашел ее!</h5>
+          <p class="modal-text">Не знаю зачем нам она! :D</p>
+          <label for="modal-1">Nice!</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="progress margin-bottom">
+          <div class="bar w-75"></div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 20rem;">
+        <img src="https://picsum.photos/768" alt="Card example image">
+      
+        <div class="card-body ">
+          <h4 class="card-title">У меня есть опыт работы с этим фреймворком!</h4>
+          <h5 class="card-subtitle">Просто не комерческий.</h5>
+          <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
+          <button class="card-btn">Let me go here!</button>
+        </div>
+      </div>
+    
+    <div class="overlay">
+        <div class="custom-modal container paper">
+        <h2 class="custom-modal__title">CustomTitle!</h2>
+        <p>Header zaiviy </p>
+        <button class="custom-modal__btn">Close</button>
+      </div>
+    </div>
+    
+
+      <script src="js/scriptJS.js"></script>
+</body>
+</html>
